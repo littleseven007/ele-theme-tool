@@ -1,26 +1,33 @@
 {
-  "name": "ele-theme-tool",
-  "version": "0.0.2",
+  "name": "@littleseven/ele-theme-tool",
+  "version": "0.0.7",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "init": "node ./bin/index.js -i",
+    "build": "node ./bin/index.js -s"
+  },
   "keywords": [
     "scss",
     "ElementUI",
     "theme"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "bin": {
     "ele-theme-tool": "./bin/index.js",
     "ett": "./bin/index.js"
   },
   "dependencies": {
     "commander": "^3.0.2",
+    "glob": "^7.2.3",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.0",
     "gulp-cssmin": "^0.2.0",
     "gulp-nop": "0.0.3",
     "gulp-sass": "^4.0.2",
     "gulp4-run-sequence": "^1.0.0",
-    "ora": "^4.0.2",
-    "glob": "^7.2.3"
+    "ora": "^4.0.2"
   }
 }
